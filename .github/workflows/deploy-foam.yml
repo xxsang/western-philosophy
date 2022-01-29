@@ -1,0 +1,28 @@
+name: Deploy Foam website
+
+on:
+  push:
+
+jobs:
+  deploy-website:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+
+      - name: Install website dependencies
+        run: yarn
+        working-directory: _layouts
+      - name: Build website
+        run: yarn build -- --prefix-paths
+        working-directory: _layouts
+
+      - name: Deploy to the gh-pages branch
+        # only deploy when the main branch has some changes
+        if: github.ref == 'refs/heads/master'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_layouts/public
