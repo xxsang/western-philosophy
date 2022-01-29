@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkwestern_philosophy=self.webpackChunkwestern_philosophy||[]).push([[902],{83:function(e,n,t){t.r(n);var u=t(7294);n.default=function(){return u.createElement("h1",null,"Page Not Found")}}}]);
+//# sourceMappingURL=component---node-modules-gatsby-philipps-foam-theme-src-pages-404-js-0126063d9c38eab52ebc.js.map
