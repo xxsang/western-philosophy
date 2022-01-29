@@ -8,7 +8,7 @@ module.exports = {
       resolve: `gatsby-philipps-foam-theme`,
       options: {
         rootNote: "pages/西方哲学史大纲",
-        contentPath: `${__dirname}/..`,
+        contentPath: `${__dirname}/pages`,
         ignore: [
           "contents.md"
         ],
