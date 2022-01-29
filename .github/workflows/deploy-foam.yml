@@ -21,7 +21,7 @@ jobs:
 
       - name: Deploy to the gh-pages branch
         # only deploy when the main branch has some changes
-        if: github.ref == 'refs/heads/master'
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
