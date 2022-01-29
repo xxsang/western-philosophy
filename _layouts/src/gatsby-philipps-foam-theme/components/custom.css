@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;500&display=swap');
 main {
-    font-family: 'Long Cang';
-    font-size: 1.8em;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-size: 1.3em;
 }
