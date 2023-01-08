@@ -3,3 +3,4 @@
 
 Link: [https://xxsang.github.io/western-philosophy/](https://xxsang.github.io/western-philosophy/)
 
+![screenshot](assets/readme_pic.png)
